@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+  <tr class="row">
+    <th class="col-1"></th>
+    <th class="col-3 text-center">ID</th>
+    <th class="col-8">NAME</th>
+  </tr>
+  </thead>
+  <tbody>
+
+  <div *ngFor="let customer of customers">
+    <app-customer *ngIf="!customer.isSelected" [customer]="customer"/>
+  </div>
+
+  </tbody>
+</table>
